@@ -25,6 +25,8 @@ import { FontAwesome } from "@expo/vector-icons";
 import Greeting from "./components/Greeting";
 import Travel from "./screens/week3/Travel";
 import Resort from "./screens/week3/Resort";
+import Heartbeat from "./components/week5/Heartbeat";
+import Health from "./screens/week5/Health";
 
 export default function App() {
   return (
@@ -126,7 +128,8 @@ export default function App() {
     //   <Greeting name="Valeera" lastname="exar" />
     // </View>
         // <Ex2 />
-        <Resort />
+        // <Resort />
+        <Health />
   );
 }
 
