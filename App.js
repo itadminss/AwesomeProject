@@ -27,6 +27,8 @@ import Travel from "./screens/week3/Travel";
 import Resort from "./screens/week3/Resort";
 import Heartbeat from "./components/week5/Heartbeat";
 import Health from "./screens/week5/Health";
+import Home from "./components/week6/Home";
+import FlatListExample from "./screens/week6/FlatListExample";
 
 export default function App() {
   return (
@@ -129,7 +131,9 @@ export default function App() {
     // </View>
         // <Ex2 />
         // <Resort />
-        <Health />
+        // <Health />
+        <Home />
+        // <FlatListExample/>
   );
 }
 
