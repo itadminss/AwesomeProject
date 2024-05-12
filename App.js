@@ -29,6 +29,11 @@ import Heartbeat from "./components/week5/Heartbeat";
 import Health from "./screens/week5/Health";
 import Home from "./components/week6/Home";
 import FlatListExample from "./screens/week6/FlatListExample";
+import { NavigationContainer } from "@react-navigation/native";
+import HomeStack from "./navigations/HomeStack";
+import BottomTab from "./navigations/BottomTab";
+import RootStack from "./navigations/RootStack";
+import ChartKitScreen from "./screens/week5/ChartKitScreen";
 
 export default function App() {
   return (
@@ -132,8 +137,17 @@ export default function App() {
         // <Ex2 />
         // <Resort />
         // <Health />
-        <Home />
+        // <Home />
         // <FlatListExample/>
+
+
+        <NavigationContainer>
+        {/* <HomeStack />
+        <BottomTab /> */}
+          <RootStack />
+       </NavigationContainer>
+    // <ChartKitScreen />
+ 
   );
 }
 

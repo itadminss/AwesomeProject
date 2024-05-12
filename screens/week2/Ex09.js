@@ -1,8 +1,11 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { View } from 'react-native';
+import { Button, View } from 'react-native';
 
 export default function Ex09() {
+  const navigation = useNavigation();
   return (
+    <View style={{ flex: 1 }}>
     <View style={{flex:1,justifyContent:'space-between',flexDirection:'row'}}>    
      
     <View style={{justifyContent:'space-around'}}>
@@ -35,6 +38,10 @@ export default function Ex09() {
     
       
     </View>
+
+ 
+<Button title="Next" onPress={() => navigation.navigate("Ex10")} />
+</View>
     
   );
 }
