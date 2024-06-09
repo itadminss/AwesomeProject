@@ -35,6 +35,9 @@ import BottomTab from "./navigations/BottomTab";
 import RootStack from "./navigations/RootStack";
 import ChartKitScreen from "./screens/week5/ChartKitScreen";
 
+
+import { AuthContext, AuthContextProvider } from "./hooks/AuthContextProvider";
+
 export default function App() {
   return (
     // <Welcome/>
@@ -140,12 +143,14 @@ export default function App() {
         // <Home />
         // <FlatListExample/>
 
+        <AuthContextProvider>
+          <NavigationContainer>
+          {/* <HomeStack />
+          <BottomTab /> */}
+            <RootStack />
+        </NavigationContainer>
+       </AuthContextProvider>
 
-        <NavigationContainer>
-        {/* <HomeStack />
-        <BottomTab /> */}
-          <RootStack />
-       </NavigationContainer>
     // <ChartKitScreen />
  
   );
